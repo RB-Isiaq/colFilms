@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <script defer src="../scripts/verification.js"></script>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <main>
+      <form id="login">
+        <!-- action="./verificationPage.html" -->
+        <fieldset>
+          <h1>Welcome Back</h1>
+          <label for="user"
+            >Username <br />
+            <input
+              id="user"
+              class="enter"
+              type="text"
+              placeholder="Maryannepark001"
+              required
+            />
+            <br />
+          </label>
+          <label for="id_password"
+            >Password <br />
+            <input id="id_password" class="enter" type="password" required />
+            <i class="far fa-eye" id="togglePassword"></i>
+            <br />
+          </label>
+          <p>
+            Don't have an account?
+            <a
+              href="./registrationPage.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sign up</a
+            >
+          </p>
+          <button type="submit" class="submit" value="Submit">Log in</button>
+        </fieldset>
+
+        <p id="dispaly_error"></p>
+      </form>
+    </main>
+  </body>
+</html>

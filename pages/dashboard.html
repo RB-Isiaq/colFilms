@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <script defer src="../scripts/video.js"></script>
+    <script defer src="../scripts/script.js"></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <img
+            class="header-logo"
+            id="toggle_btn"
+            src="../icons/toggle.svg"
+            alt=""
+          />
+          <img class="header-logo" src="../icons/Colfilms logo.svg" alt="" />
+          <div class="search-container">
+            <input type="text" id="search" placeholder="Search" />
+            <label for="search"><img src="../icons/search.svg" alt="" /></label>
+          </div>
+          <img class="header-logo" src="../icons/video-add.svg" alt="" />
+          <img class="header-logo" src="../icons/notification.svg" alt="" />
+          <img class="header-logo" src="../icons/profile-circle.svg" alt="" />
+        </div>
+      </header>
+      <div class="body-container">
+        <div class="side-bar">
+          <ul class="file_lists">
+            <li class="files">
+              <a href="#"><img src="../icons/home.svg" alt="" /> Home</a>
+            </li>
+            <li class="files">
+              <a href="./categories.html"
+                ><img src="../icons/category.svg" alt="" /> Categories</a
+              >
+            </li>
+            <li class="files">
+              <a href="./saved.html"
+                ><img src="../icons/save.svg" alt="" /> Saved</a
+              >
+            </li>
+            <li class="files">
+              <a href="./uploadPage.html"
+                ><img src="../icons/video-add.svg" alt="" /> Upload</a
+              >
+            </li>
+            <li class="files">
+              <a href="./analytics.html"
+                ><img src="../icons/Vector.svg" alt="" /> Analytics</a
+              >
+            </li>
+            <li class="files">
+              <a href="./settings.html"
+                ><img src="../icons/setting.svg" alt="" /> Settings</a
+              >
+            </li>
+            <li class="files">
+              <a href="./help.html"
+                ><img src="../icons/message-question.svg" alt="" /> Help</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-bar">
+          <h1>Trending</h1>
+          <div class="video">
+            <div class="player">
+              <video
+                class="player__video viewer"
+                src="../videos/Col-Films _ A streaming platform.mp4"
+                autoplay
+                muted
+              ></video>
+
+              <div class="player__controls">
+                <div class="progress">
+                  <div class="progress__filled"></div>
+                </div>
+                <button class="player__button toggle" title="Toggle Play">
+                  ►
+                </button>
+                <input
+                  type="range"
+                  name="volume"
+                  class="player__slider"
+                  min="0"
+                  max="1"
+                  step="0.05"
+                  value="1"
+                />
+                <input
+                  type="range"
+                  name="playbackRate"
+                  class="player__slider"
+                  min="0.5"
+                  max="2"
+                  step="0.1"
+                  value="1"
+                />
+                <button data-skip="-10" class="player__button">« 10s</button>
+                <button data-skip="25" class="player__button">25s »</button>
+                <button class="full_screen player__button">[ ]</button>
+              </div>
+            </div>
+            <div class="video_title">
+              <img class="user_profile" src="../icons/userA.svg" alt="" />
+              <div class="user_title">
+                <h3>Colfims platform</h3>
+                <p>Tm Grasshopper2</p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="player">
+              <video
+                class="player__video viewer"
+                src="../videos/videoplayback (4).mp4"
+                autoplay
+                muted
+              ></video>
+
+              <div class="player__controls">
+                <div class="progress">
+                  <div class="progress__filled"></div>
+                </div>
+                <button class="player__button toggle" title="Toggle Play">
+                  ►
+                </button>
+                <input
+                  type="range"
+                  name="volume"
+                  class="player__slider"
+                  min="0"
+                  max="1"
+                  step="0.05"
+                  value="1"
+                />
+                <input
+                  type="range"
+                  name="playbackRate"
+                  class="player__slider"
+                  min="0.5"
+                  max="2"
+                  step="0.1"
+                  value="1"
+                />
+                <button data-skip="-10" class="player__button">« 10s</button>
+                <button data-skip="25" class="player__button">25s »</button>
+                <button class="full_screen player__button">[ ]</button>
+              </div>
+            </div>
+            <div class="video_title">
+              <img class="user_profile" src="../icons/userB.svg" alt="" />
+              <div class="user_title">
+                <h3>Alchemy of Soul</h3>
+                <p>Kim Park jung</p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="player">
+              <video
+                class="player__video viewer"
+                src="../videos/videoplayback (1).mp4"
+                autoplay
+                muted
+              ></video>
+
+              <div class="player__controls">
+                <div class="progress">
+                  <div class="progress__filled"></div>
+                </div>
+                <button class="player__button toggle" title="Toggle Play">
+                  ►
+                </button>
+                <input
+                  type="range"
+                  name="volume"
+                  class="player__slider"
+                  min="0"
+                  max="1"
+                  step="0.05"
+                  value="1"
+                />
+                <input
+                  type="range"
+                  name="playbackRate"
+                  class="player__slider"
+                  min="0.5"
+                  max="2"
+                  step="0.1"
+                  value="1"
+                />
+                <button data-skip="-10" class="player__button">« 10s</button>
+                <button data-skip="25" class="player__button">25s »</button>
+                <button class="full_screen player__button">[ ]</button>
+              </div>
+            </div>
+            <div class="video_title">
+              <img class="user_profile" src="../icons/userC.svg" alt="" />
+              <div class="user_title">
+                <h3>The Woman King</h3>
+                <p>Anna Joy</p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="player">
+              <video
+                class="player__video viewer"
+                src="../videos/videoplayback (3).mp4"
+                autoplay
+                muted
+              ></video>
+
+              <div class="player__controls">
+                <div class="progress">
+                  <div class="progress__filled"></div>
+                </div>
+                <button class="player__button toggle" title="Toggle Play">
+                  ►
+                </button>
+                <input
+                  type="range"
+                  name="volume"
+                  class="player__slider"
+                  min="0"
+                  max="1"
+                  step="0.05"
+                  value="1"
+                />
+                <input
+                  type="range"
+                  name="playbackRate"
+                  class="player__slider"
+                  min="0.5"
+                  max="2"
+                  step="0.1"
+                  value="1"
+                />
+                <button data-skip="-10" class="player__button">« 10s</button>
+                <button data-skip="25" class="player__button">25s »</button>
+                <button class="full_screen player__button">[ ]</button>
+              </div>
+            </div>
+            <div class="video_title">
+              <img class="user_profile" src="../icons/userD.svg" alt="" />
+              <div class="user_title">
+                <h3>Organic Chemistry</h3>
+                <p>Ridwan Isiaq</p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="player">
+              <video
+                class="player__video viewer"
+                src="../videos/video1.mp4"
+                autoplay
+                muted
+              ></video>
+
+              <div class="player__controls">
+                <div class="progress">
+                  <div class="progress__filled"></div>
+                </div>
+                <button class="player__button toggle" title="Toggle Play">
+                  ►
+                </button>
+                <input
+                  type="range"
+                  name="volume"
+                  class="player__slider"
+                  min="0"
+                  max="1"
+                  step="0.05"
+                  value="1"
+                />
+                <input
+                  type="range"
+                  name="playbackRate"
+                  class="player__slider"
+                  min="0.5"
+                  max="2"
+                  step="0.1"
+                  value="1"
+                />
+                <button data-skip="-10" class="player__button">« 10s</button>
+                <button data-skip="25" class="player__button">25s »</button>
+                <button class="full_screen player__button">[ ]</button>
+              </div>
+            </div>
+            <div class="video_title">
+              <img class="user_profile" src="../icons/userC.svg" alt="" />
+              <div class="user_title">
+                <h3>Learn Javascript in 24 hours</h3>
+                <p>Ayinde Precious</p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="player">
+              <video
+                class="player__video viewer"
+                src="../videos/videoplayback (2).mp4"
+                autoplay
+                muted
+              ></video>
+
+              <div class="player__controls">
+                <div class="progress">
+                  <div class="progress__filled"></div>
+                </div>
+                <button class="player__button toggle" title="Toggle Play">
+                  ►
+                </button>
+                <input
+                  type="range"
+                  name="volume"
+                  class="player__slider"
+                  min="0"
+                  max="1"
+                  step="0.05"
+                  value="1"
+                />
+                <input
+                  type="range"
+                  name="playbackRate"
+                  class="player__slider"
+                  min="0.5"
+                  max="2"
+                  step="0.1"
+                  value="1"
+                />
+                <button data-skip="-10" class="player__button">« 10s</button>
+                <button data-skip="25" class="player__button">25s »</button>
+                <button class="full_screen player__button">[ ]</button>
+              </div>
+            </div>
+            <div class="video_title">
+              <img class="user_profile" src="../icons/userA.svg" alt="" />
+              <div class="user_title">
+                <h3>Advanced Figma Course</h3>
+                <p>Zainab Omolola</p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="player">
+              <video
+                class="player__video viewer"
+                src="../videos/videoplayback (5).mp4"
+                autoplay
+                muted
+              ></video>
+
+              <div class="player__controls">
+                <div class="progress">
+                  <div class="progress__filled"></div>
+                </div>
+                <button class="player__button toggle" title="Toggle Play">
+                  ►
+                </button>
+                <input
+                  type="range"
+                  name="volume"
+                  class="player__slider"
+                  min="0"
+                  max="1"
+                  step="0.05"
+                  value="1"
+                />
+                <input
+                  type="range"
+                  name="playbackRate"
+                  class="player__slider"
+                  min="0.5"
+                  max="2"
+                  step="0.1"
+                  value="1"
+                />
+                <button data-skip="-10" class="player__button">« 10s</button>
+                <button data-skip="25" class="player__button">25s »</button>
+                <button class="full_screen player__button">[ ]</button>
+              </div>
+            </div>
+            <div class="video_title">
+              <img class="user_profile" src="../icons/userD.svg" alt="" />
+              <div class="user_title">
+                <h3>Terminator</h3>
+                <p>Mary Promise</p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="player">
+              <video
+                class="player__video viewer"
+                src="../videos/652333414.mp4"
+                autoplay
+                muted
+              ></video>
+
+              <div class="player__controls">
+                <div class="progress">
+                  <div class="progress__filled"></div>
+                </div>
+                <button class="player__button toggle" title="Toggle Play">
+                  ►
+                </button>
+                <input
+                  type="range"
+                  name="volume"
+                  class="player__slider"
+                  min="0"
+                  max="1"
+                  step="0.05"
+                  value="1"
+                />
+                <input
+                  type="range"
+                  name="playbackRate"
+                  class="player__slider"
+                  min="0.5"
+                  max="2"
+                  step="0.1"
+                  value="1"
+                />
+                <button data-skip="-10" class="player__button">« 10s</button>
+                <button data-skip="25" class="player__button">25s »</button>
+                <button class="full_screen player__button">[ ]</button>
+              </div>
+            </div>
+            <div class="video_title">
+              <img class="user_profile" src="../icons/userB.svg" alt="" />
+              <div class="user_title">
+                <h3>Just vibes and play</h3>
+                <p>Queen Suliyat</p>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="player">
+              <video
+                class="player__video viewer"
+                src="../videos/videoplayback.mp4"
+                autoplay
+                muted
+              ></video>
+
+              <div class="player__controls">
+                <div class="progress">
+                  <div class="progress__filled"></div>
+                </div>
+                <button class="player__button toggle" title="Toggle Play">
+                  ►
+                </button>
+                <input
+                  type="range"
+                  name="volume"
+                  class="player__slider"
+                  min="0"
+                  max="1"
+                  step="0.05"
+                  value="1"
+                />
+                <input
+                  type="range"
+                  name="playbackRate"
+                  class="player__slider"
+                  min="0.5"
+                  max="2"
+                  step="0.1"
+                  value="1"
+                />
+                <button data-skip="-10" class="player__button">« 10s</button>
+                <button data-skip="25" class="player__button">25s »</button>
+                <button class="full_screen player__button">[ ]</button>
+              </div>
+            </div>
+            <div class="video_title">
+              <img class="user_profile" src="../icons/userC.svg" alt="" />
+              <div class="user_title">
+                <h3>Play with me</h3>
+                <p>Tosin Goodluck</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

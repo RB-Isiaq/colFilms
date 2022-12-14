@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/uploadPage.css" />
+    <script defer src="../scripts/script.js"></script>
+    <title>upload page</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <img
+            class="header-logo"
+            id="toggle_btn"
+            src="../icons/toggle.svg"
+            alt=""
+          />
+          <img class="header-logo" src="../icons/Colfilms logo.svg" alt="" />
+          <div class="search-container">
+            <input type="text" id="search" placeholder="Search files..." />
+            <label for="search"><img src="../icons/search.svg" alt="" /></label>
+          </div>
+          <img class="header-logo" src="../icons/setting.svg" alt="" />
+        </div>
+      </header>
+      <div class="body-container">
+        <div class="side-bar">
+          <ul class="file_lists">
+            <li class="files">
+              <a href="./dashboard.html"
+                ><img src="../icons/home.svg" alt="" /> Home</a
+              >
+            </li>
+            <li class="files">
+              <a href="./categories.html"
+                ><img src="../icons/category.svg" alt="" /> Categories</a
+              >
+            </li>
+            <li class="files">
+              <a href="./saved.html"
+                ><img src="../icons/save.svg" alt="" /> Saved</a
+              >
+            </li>
+            <li class="files">
+              <a href="#"><img src="../icons/video-add.svg" alt="" /> Upload</a>
+            </li>
+            <li class="files">
+              <a href="./analytics.html"
+                ><img src="../icons/Vector.svg" alt="" /> Analytics</a
+              >
+            </li>
+            <li class="files">
+              <a href="./settings.html"
+                ><img src="../icons/setting.svg" alt="" /> Settings</a
+              >
+            </li>
+            <li class="files">
+              <a href="./help.html"
+                ><img src="../icons/message-question.svg" alt="" /> Help</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="main-bar">
+          <label class="upload-detail" for="file">
+            <div class="upload_files">
+              <img src="../images/uploadPage/image 2.png" alt="" />
+              <label for="file">
+                Drag and drop or <span>browse</span> your files here</label
+              >
+              <input id="file" type="file" name="browse" />
+            </div>
+          </label>
+          <div class="uploading_files">
+            <img class="upload-icon" src="../icons/upload-file.svg" alt="" />
+            <div class="progress">
+              <div class="progress__filled"></div>
+              <p>70%</p>
+            </div>
+          </div>
+          <div class="uploading_files">
+            <img class="upload-icon" src="../icons/upload-file.svg" alt="" />
+            <div class="progress">
+              <div class="progress__filled2"></div>
+              <p>50%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

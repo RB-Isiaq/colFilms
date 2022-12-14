@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/registration.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <script defer src="../scripts/registration.js"></script>
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <main>
+      <form id="register">
+        <!-- action="./loginPage.html" -->
+        <fieldset>
+          <h1>Sign Up</h1>
+
+          <label for="full_name"
+            >Full Name <br />
+            <input
+              id="full_name"
+              class="enter"
+              type="text"
+              placeholder="Maryanne Park"
+              required
+            />
+            <br />
+          </label>
+          <label for="user"
+            >Username <br />
+            <input
+              id="user"
+              class="enter"
+              type="text"
+              placeholder="Maryannepark001"
+              required
+            />
+            <br />
+          </label>
+
+          <label for="email"
+            >Email <br />
+            <input
+              id="email"
+              type="email"
+              class="enter"
+              placeholder="abcd@gmail.com"
+              required
+            />
+            <br />
+          </label>
+          <label for="id_password"
+            >Password <br />
+            <input id="id_password" class="enter" type="password" required />
+            <i class="far fa-eye" id="togglePassword"></i>
+            <br />
+          </label>
+          <p>
+            Already have an account?
+            <a
+              href="./loginPage.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Sign in</a
+            >
+          </p>
+          <button id="reg_btn" type="submit" class="submit" value="Submit">
+            Sign Up
+          </button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+*,
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main > div {
+  margin: 60px auto;
+  width: 400px;
+  border: 1px solid lightseagreen;
+}
+h1,
+p {
+  text-align: center;
+  font-family: Open sans;
+}
+.verify {
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(2, 124, 108);
+  color: azure;
+}
+a {
+  font-size: 1.3rem;
+  color: azure;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 1rem 1rem;
+}
+p {
+  display: block;
+
+  background-color: rgb(2, 124, 108);
+  width: 300px;
+  margin: 2rem auto;
+}
+p:hover {
+  background: black;
+}
+
+@media only screen and (max-width: 400px) {
+  main {
+    width: 100vw;
+    margin: 10px 0;
+    padding: 3rem 1rem;
+  }
+  main > div {
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
